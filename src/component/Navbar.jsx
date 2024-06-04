@@ -17,7 +17,7 @@ const Navbar = ({ setSearchTerm }) => {
       gsap.to(logoRef.current, {
         rotationY: "+=360",
         duration: 3,
-        ease: "power3.inOut",
+        ease: "elastic.inOut",
       });
     }, 3000);
 
