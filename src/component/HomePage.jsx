@@ -5,6 +5,8 @@ import Navbar from "../component/Navbar";
 import MovieList from "../component/MovieList";
 import MovieDetails from "../component/MovieDetails";
 import AuthForm from "../component/AuthForm";
+import img1 from "../assets/left.png";
+import img2 from "../assets/right.png";
 
 const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState("Avengers");
@@ -52,14 +54,14 @@ const HomePage = () => {
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
-          Previous
+          <img src={img1} alt="" className="w-10 mb-1" />
         </button>
-        <span className="mx-2">{`Page ${currentPage} of ${totalPages}`}</span>
+        <span className="mx-2 text-2xl font-medium ml-4 mr-4 ">{`Page ${currentPage} of ${totalPages}`}</span>
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
-          Next
+          <img src={img2} alt="" className="w-6 mb-1" />
         </button>
       </div>
     </div>
