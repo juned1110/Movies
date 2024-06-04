@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 // import { addFavorite, removeFavorite } from "../store/moviesSlice";
 
 const MovieCard = ({ movie, viewDetails }) => {
-  const dispatch = useDispatch();
-  const favorites = useSelector((state) => state.movies.favorites);
+  // const dispatch = useDispatch();
+  // const favorites = useSelector((state) => state.movies.favorites);
   // const isFavorite = favorites.some((fav) => fav.imdbID === movie.imdbID);
 
   // const toggleFavorite = () => {
@@ -17,7 +17,7 @@ const MovieCard = ({ movie, viewDetails }) => {
 
   return (
     <div
-      className="p-2 m-2 rounded-lg shadow-xl mb-5 mt-10 bg-[#dddada] border-4 border-solid border-zinc-100 hover:border-slate-300 "
+      className="p-2 m-2 rounded-lg shadow-xl mb-5 mt-10 bg-[#dddada] border-4 border-solid border-zinc-100 hover:border-slate-300"
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.17) 0px -2px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -7px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 1px 2px, rgba(0, 0, 0, 0.09) 0px 2px 4px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 10px 10px",

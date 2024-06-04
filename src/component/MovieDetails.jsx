@@ -14,7 +14,7 @@ const MovieDetails = ({ selectedMovieId, closeDetails }) => {
   }, [selectedMovieId, dispatch]);
 
   return (
-    <div className="fixed inset-0 bg-gray-950 bg-opacity-75 flex items-center justify-center z-20">
+    <div className="fixed inset-0 bg-gray-950 bg-opacity-75 flex items-center justify-center">
       <div className="bg-[#f1f1f1] p-4 rounded-lg max-w-lg w-full">
         <button
           onClick={closeDetails}

@@ -42,7 +42,7 @@ const Navbar = ({ setSearchTerm }) => {
         />
         <button
           type="submit"
-          className="p-3 bg-white w-[3vw] rounded-full sm:w-10"
+          className="p-3 bg-white w-[3vw] rounded-full sm:w-10 xs:w-10"
           style={{
             boxShadow:
               "rgba(0, 0, 0, 0.17) 0px -2px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -7px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 1px 2px, rgba(0, 0, 0, 0.09) 0px 2px 4px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 10px 10px",
@@ -55,7 +55,7 @@ const Navbar = ({ setSearchTerm }) => {
         {user ? (
           <button
             onClick={handleLogout}
-            className="p-[0.6rem]  rounded-lg w-[10vw] mr-5  bg-gradient-to-r bg-[#E90045] hover:bg-[#ff3a3a] sm:w-[12vw]"
+            className="p-[0.6rem]  rounded-lg w-[10vw] mr-5  bg-gradient-to-r bg-[#E90045] hover:bg-[#ff3a3a] sm:w-[12vw] xs:w-20"
           >
             Logout
           </button>
