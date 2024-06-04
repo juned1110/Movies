@@ -53,7 +53,7 @@ const HomePage = () => {
       <div className="flex justify-center mt-4">
         <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 ml-[20vw] mt-6">
               Showing{" "}
               <span className="font-medium">{(currentPage - 1) * 10 + 1}</span>{" "}
               to{" "}
@@ -65,7 +65,7 @@ const HomePage = () => {
           </div>
           <div>
             <nav
-              className="isolate inline-flex -space-x-px rounded-md shadow-sm"
+              className="isolate inline-flex -space-x-px rounded-md shadow-sm mt-10 mr-[11vw] mb-3"
               aria-label="Pagination"
             >
               <button

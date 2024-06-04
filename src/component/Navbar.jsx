@@ -20,7 +20,7 @@ const Navbar = ({ setSearchTerm }) => {
 
   return (
     <nav
-      className="p-2 bg-zinc-900 sticky top-5  text-white flex justify-between items-center rounded-full mx-3 z-30"
+      className="p-2 bg-zinc-900 sticky top-5  text-white flex justify-between items-center rounded-full mx-3 z-10"
       style={{
         boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       }}
