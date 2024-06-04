@@ -1,19 +1,19 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addFavorite, removeFavorite } from "../store/moviesSlice";
+// import { addFavorite, removeFavorite } from "../store/moviesSlice";
 
 const MovieCard = ({ movie, viewDetails }) => {
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.movies.favorites);
   // const isFavorite = favorites.some((fav) => fav.imdbID === movie.imdbID);
 
-  const toggleFavorite = () => {
-    if (isFavorite) {
-      dispatch(removeFavorite(movie));
-    } else {
-      dispatch(addFavorite(movie));
-    }
-  };
+  // const toggleFavorite = () => {
+  //   if (isFavorite) {
+  //     dispatch(removeFavorite(movie));
+  //   } else {
+  //     dispatch(addFavorite(movie));
+  //   }
+  // };
 
   return (
     <div
@@ -28,7 +28,7 @@ const MovieCard = ({ movie, viewDetails }) => {
       <img
         src={movie.Poster}
         alt={movie.Title}
-        className="w-full h-64 object-cover rounded-[30px]"
+        className="w-full h-64 object-cover rounded-[30px] transition-transform transform hover:scale-110"
         style={{
           boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
         }}
