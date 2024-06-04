@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../store/authSlice";
 import img from "../assets/img.png";
 import img1 from "../assets/search.png";
+import { gsap } from "gsap";
 
 const Navbar = ({ setSearchTerm }) => {
   const [term, setTerm] = React.useState("");
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user);
+
+  const logoRef = useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      gsap.to(logoRef.current, {
+        rotationY: "+=360",
+        duration: 2,
+        ease: "power1.inOut",
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -26,7 +41,7 @@ const Navbar = ({ setSearchTerm }) => {
       }}
     >
       <h1 className="text-2xl">
-        <img src={img} alt="Logo" className="w-20 ml-5" />
+        <img src={img} alt="Logo" ref={logoRef} className="w-20 ml-5" />
       </h1>
       <form onSubmit={handleSearch} className="flex">
         <input
