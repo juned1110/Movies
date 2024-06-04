@@ -34,9 +34,20 @@ const Navbar = ({ setSearchTerm }) => {
           placeholder="Search movie here..."
           value={term}
           onChange={(e) => setTerm(e.target.value)}
-          className="p-2 rounded-l-2xl rounded-r-2xl mr-3 text-black w-[30vw] "
+          className="p-2 rounded-l-2xl rounded-r-2xl mr-3 text-black w-[30vw] placeholder-slate-500"
+          style={{
+            boxShadow:
+              "rgba(0, 0, 0, 0.17) 0px -2px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -7px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 1px 2px, rgba(0, 0, 0, 0.09) 0px 2px 4px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 10px 10px",
+          }}
         />
-        <button type="submit" className="p-3 bg-white w-[3vw] rounded-full">
+        <button
+          type="submit"
+          className="p-3 bg-white w-[3vw] rounded-full"
+          style={{
+            boxShadow:
+              "rgba(0, 0, 0, 0.17) 0px -2px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -7px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 1px 2px, rgba(0, 0, 0, 0.09) 0px 2px 4px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 10px 10px",
+          }}
+        >
           <img src={img1} alt="" />
         </button>
       </form>
@@ -55,4 +66,3 @@ const Navbar = ({ setSearchTerm }) => {
 };
 
 export default Navbar;
-// bg-[#E90045]
