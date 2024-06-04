@@ -31,6 +31,7 @@ const Navbar = ({ setSearchTerm }) => {
       <form onSubmit={handleSearch} className="flex">
         <input
           type="text"
+          placeholder="Search movie here..."
           value={term}
           onChange={(e) => setTerm(e.target.value)}
           className="p-2 rounded-l-2xl rounded-r-2xl mr-3 text-black w-[30vw] "
