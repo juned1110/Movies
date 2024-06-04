@@ -16,8 +16,8 @@ const Navbar = ({ setSearchTerm }) => {
     const interval = setInterval(() => {
       gsap.to(logoRef.current, {
         rotationY: "+=360",
-        duration: 2,
-        ease: "power1.inOut",
+        duration: 3,
+        ease: "power3.inOut",
       });
     }, 3000);
 
