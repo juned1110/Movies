@@ -1,8 +1,10 @@
-# React + Vite
+<p> Movie App </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p> You can check UI images in UI folder in code base </p>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p> Steps in open file</p>
+<p> 1. To run the code firstly you need to unzip file </p>
+<p> 2. After that open the newly generated file in VSCode </p>
+<p> 3. Open terminal and type "npm install" command </p>
+<p> 4. After running command to open server type " npm run dev " command </p>
+<p> 5. Click on link generated</p>
