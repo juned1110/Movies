@@ -1,20 +1,6 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-// import { addFavorite, removeFavorite } from "../store/moviesSlice";
 
 const MovieCard = ({ movie, viewDetails }) => {
-  // const dispatch = useDispatch();
-  // const favorites = useSelector((state) => state.movies.favorites);
-  // const isFavorite = favorites.some((fav) => fav.imdbID === movie.imdbID);
-
-  // const toggleFavorite = () => {
-  //   if (isFavorite) {
-  //     dispatch(removeFavorite(movie));
-  //   } else {
-  //     dispatch(addFavorite(movie));
-  //   }
-  // };
-
   return (
     <div
       className="p-2 m-2 rounded-lg shadow-xl mb-5 mt-10 bg-[#dddada] border-4 border-solid border-zinc-100 hover:border-slate-300"
@@ -45,14 +31,6 @@ const MovieCard = ({ movie, viewDetails }) => {
       >
         Details
       </button>
-      {/* <button
-        onClick={toggleFavorite}
-        className={`p-2 rounded mt-2 ${
-        isFavorite ? "bg-red-500" : "bg-green-500"
-        }`}
-      >
-        {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
-      </button> */}
     </div>
   );
 };
