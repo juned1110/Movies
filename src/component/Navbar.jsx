@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../store/authSlice";
 import img from "../assets/img.png";
 import img1 from "../assets/search.png";
+
+
 import { gsap } from "gsap";
 
 const Navbar = ({ setSearchTerm }) => {
